@@ -21,32 +21,8 @@ module.exports = {
 
   // Rules order is important, please avoid shuffling them
   extends: [
-    // Base ESLint recommended rules
-    // 'eslint:recommended',
-
-    // https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin#usage
-    // ESLint typescript rules
-    'plugin:@typescript-eslint/recommended',
-
-    // Uncomment any of the lines below to choose desired strictness,
-    // but leave only one uncommented!
-    // See https://eslint.vuejs.org/rules/#available-rules
-    'plugin:vue/vue3-essential', // Priority A: Essential (Error Prevention)
-    // 'plugin:vue/vue3-strongly-recommended', // Priority B: Strongly Recommended (Improving Readability)
-    // 'plugin:vue/vue3-recommended', // Priority C: Recommended (Minimizing Arbitrary Choices and Cognitive Overhead)
-
-    'standard'
-    
-  ],
-
-  plugins: [
-    // required to apply rules which need type information
-    '@typescript-eslint',
-
-    // https://eslint.vuejs.org/user-guide/#why-doesn-t-it-work-on-vue-files
-    // required to lint *.vue files
-    'vue'
-    
+    './.eslintrc-auto-import.json',
+    '@crewbe/eslint-config-vue-ts'
   ],
 
   globals: {
@@ -62,44 +38,9 @@ module.exports = {
     chrome: 'readonly'
   },
 
-  // add your custom rules here
   rules: {
-    
-    // allow async-await
-    'generator-star-spacing': 'off',
-    // allow paren-less arrow functions
-    'arrow-parens': 'off',
-    'one-var': 'off',
-    'no-void': 'off',
-    'multiline-ternary': 'off',
-
-    'import/first': 'off',
-    'import/namespace': 'error',
-    'import/default': 'error',
-    'import/export': 'error',
-    'import/extensions': 'off',
-    'import/no-unresolved': 'off',
-    'import/no-extraneous-dependencies': 'off',
-
-    // The core 'import/named' rules
-    // does not work with type definitions
-    'import/named': 'off',
-    
-    'prefer-promise-reject-errors': 'off',
-
-    quotes: ['warn', 'single', { avoidEscape: true }],
-
-    // this rule, if on, would require explicit return type on the `render` function
-    '@typescript-eslint/explicit-function-return-type': 'off',
-
-    // in plain CommonJS modules, you can't use `import foo = require('foo')` to pass this rule, so it has to be disabled
-    '@typescript-eslint/no-var-requires': 'off',
-
-    // The core 'no-unused-vars' rules (in the eslint:recommended ruleset)
-    // does not work with type definitions
-    'no-unused-vars': 'off',
-
-    // allow debugger during development only
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off'
+    "unicorn/no-abusive-eslint-disable": 'off',
+    "unicorn/filename-case": 'off',
+    "unicorn/prevent-abbreviations": 'off',
   }
 }

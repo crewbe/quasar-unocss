@@ -3,6 +3,7 @@
     clickable
     tag="a"
     target="_blank"
+    rel="noopener noreferrer"
     :href="link"
   >
     <q-item-section
@@ -19,31 +20,18 @@
   </q-item>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue';
-
-export default defineComponent({
-  name: 'EssentialLink',
-  props: {
-    title: {
-      type: String,
-      required: true
-    },
-
-    caption: {
-      type: String,
-      default: ''
-    },
-
-    link: {
-      type: String,
-      default: '#'
-    },
-
-    icon: {
-      type: String,
-      default: ''
-    }
-  }
-});
+<script setup lang="ts">
+withDefaults(
+  defineProps<{
+    title: string
+    caption?: string
+    link?: string
+    icon?: string
+  }>(),
+  {
+    link: '#',
+    caption: '',
+    icon: '',
+  },
+)
 </script>
