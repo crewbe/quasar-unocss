@@ -22,8 +22,8 @@
   "devDependencies": {
     "@crewbe/eslint-config-vue-ts": "^0.0.21",
     "@iconify/json": "^2.1.69",
-    "@quasar/app-vite": "^1.0.0",
-    "@types/node": "^12.20.21",
+    "@quasar/app-vite": "^1.0.4",
+    "@types/node": "^16.11.41",
     "autoprefixer": "^10.4.2",
     "eslint": "^8.10.0",
     "typescript": "^4.5.4",
