@@ -1,9 +1,8 @@
 {
-  "name": "quasar-vite-capacitor-unocss",
+  "name": "quasar-unocss",
   "version": "0.0.1",
   "description": "A Quasar Project",
   "productName": "Quasar App",
-  "author": "giuseppecapasso <capasso.gc@gmail.com>",
   "private": true,
   "scripts": {
     "lint": "eslint --ext .js,.ts,.vue ./",
@@ -12,12 +11,12 @@
     "build": "quasar build -m pwa"
   },
   "dependencies": {
-    "@quasar/extras": "^1.0.0",
-    "axios": "^0.21.1",
-    "pinia": "^2.0.11",
-    "quasar": "^2.6.0",
-    "vue": "^3.0.0",
-    "vue-router": "^4.0.0"
+    "@quasar/extras": "^1.14.1",
+    "axios": "^0.27.2",
+    "pinia": "^2.0.14",
+    "quasar": "^2.7.4",
+    "vue": "^3.2.37",
+    "vue-router": "^4.0.16"
   },
   "devDependencies": {
     "@crewbe/eslint-config-vue-ts": "^0.0.21",
