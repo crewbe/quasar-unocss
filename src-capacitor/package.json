@@ -1,0 +1,12 @@
+{
+  "name": "quasar-unocss",
+  "version": "0.0.1",
+  "description": "A Quasar Project",
+  "private": true,
+  "dependencies": {
+    "@capacitor/android": "^3.6.0",
+    "@capacitor/cli": "^3.6.0",
+    "@capacitor/core": "^3.6.0",
+    "@capacitor/ios": "^3.6.0"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "appId": "com.crewbe.unocss.quasar",
+  "appName": "Quasar App",
+  "bundledWebRuntime": false,
+  "npmClient": "pnpm",
+  "webDir": "www"
+}
